@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Bit-by-Bit</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/calendarstyle.css">
+   <link rel="stylesheet" href = "evo-calendar.min.css">
+   <link rel="stylesheet" href = "evo-calendar.midnight-blue.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <!------------------ intro page + header -------------------> 
+   <section id = "homepage" >
+        <header>
+        <div class="container">
+            <div class="logo">
+              <a href = "index.html"><img src="images/logoNew.png"></a>
+            </div>
+            <nav>
+                <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="calendar.html">CALENDAR</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="sponsor.html">SPONSOR</a></li>
+                <li><a href="forum.html">FORUM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <!------------------ Body -------------------> 
+
+    <div class="hero">
+        <div id="calendar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                theme: "Midnight Blue",
+                calendarEvents: [
+                    {
+                        id: 'event1', // Event's ID (required)
+                        name: "Retro-Cade Conference (9AM-2PM)", // Event name (required)
+                        date: "April/8/2023", // Event date (required)
+                        description:"Join us at our first inaugural conference at Normal Community High School!",
+                        type: "conference", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        id: 'event2', // Event's ID (required)
+                        name: "Evans Jan Meeting 1", // Event name (required)
+                        date: "January/11/2023", // Event date (required)
+                        description:"We will learn about for/while loops today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event3', // Event's ID (required)
+                        name: "Evans Jan Meeting 2", // Event name (required)
+                        date: "January/25/2023", // Event date (required)
+                        description:"We will learn about conditionals today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event4', // Event's ID (required)
+                        name: "Evans Feb Meeting 1", // Event name (required)
+                        date: "February/08/2023", // Event date (required)
+                        description:"We will be learning about math operations in python!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event5', // Event's ID (required)
+                        name: "Evans Feb Meeting 2", // Event name (required)
+                        date: "February/22/2023", // Event date (required)
+                        description:"We will be introducing the Retro-Cade conference today and continue to build upon our python lesson from the last meeting.",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event6', // Event's ID (required)
+                        name: "Evans March Meeting 1", // Event name (required)
+                        date: "March/08/2023", // Event date (required)
+                        description:"We will have a workday for your conference projects. Today we will covering proper planning aspects and have you plan out your project.",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event7', // Event's ID (required)
+                        name: "Evans March Meeting", // Event name (required)
+                        date: "March/22/2023", // Event date (required)
+                        description:"We will continue working on your conference projects!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event8', // Event's ID (required)
+                        name: "Kingsley Jan Meeting 1", // Event name (required)
+                        date: "January/19/2023", // Event date (required)
+                        description:"We will learn about for/while loops today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event9', // Event's ID (required)
+                        name: "Kinglsey Jan Meeting 2", // Event name (required)
+                        date: "January/26/2023", // Event date (required)
+                        description:"We will learn about conditionals today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event10', // Event's ID (required)
+                        name: "Kingsley Feb Meeting 1", // Event name (required)
+                        date: "February/09/2023", // Event date (required)
+                        description:"We will be learning about math operations in python!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event11', // Event's ID (required)
+                        name: "Kinglsey Feb Meeting 2", // Event name (required)
+                        date: "February/23/2023", // Event date (required)
+                        description:"We will be introducing the Retro-Cade conference today and continue to build upon our python lesson from the last meeting.",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event12', // Event's ID (required)
+                        name: "Kinglsey March Meeting 1", // Event name (required)
+                        date: "March/09/2023", // Event date (required)
+                        description:"We will have a workday for your conference projects. Today we will covering proper planning aspects and have you plan out your project.",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event13', // Event's ID (required)
+                        name: "Kingsley March Meeting 2", // Event name (required)
+                        date: "March/23/2023", // Event date (required)
+                        description:"We will continue working on your conference projects!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event14', // Event's ID (required)
+                        name: "Chiddix Jan Meeting 1", // Event name (required)
+                        date: "January/06/2023", // Event date (required)
+                        description:"We will learn about for/while loops today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event15', // Event's ID (required)
+                        name: "Chiddix Jan Meeting 2", // Event name (required)
+                        date: "January/20/2023", // Event date (required)
+                        description:"We will learn about conditionals today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event16', // Event's ID (required)
+                        name: "Chiddix Feb Meeting 1", // Event name (required)
+                        date: "February/03/2023", // Event date (required)
+                        description:"We will be learning about math operations in python!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event17', // Event's ID (required)
+                        name: "Chiddix Feb Meeting 2", // Event name (required)
+                        date: "February/24/2023", // Event date (required)
+                        description:"We will be introducing the Retro-Cade conference today and continue to build upon our python lesson from the last meeting.",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event18', // Event's ID (required)
+                        name: "Chiddix March Meeting 1", // Event name (required)
+                        date: "March/10/2023", // Event date (required)
+                        description:"We will have a workday for your conference projects. Today we will covering proper planning aspects and have you plan out your project.",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event19', // Event's ID (required)
+                        name: "Kingsley March Meeting 2", // Event name (required)
+                        date: "March/24/2023", // Event date (required)
+                        description:"We will continue working on your conference projects!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event20', // Event's ID (required)
+                        name: "Chiddix April Meeting", // Event name (required)
+                        date: "April/04/2023", // Event date (required)
+                        description:"We will go over the conference agenda and conference expectations, as well as cover any last minute questions!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event21', // Event's ID (required)
+                        name: "Kingsley April Meeting", // Event name (required)
+                        date: "April/06/2023", // Event date (required)
+                        description:"We will go over the conference agenda and conference expectations, as well as cover any last minute questions!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event22', // Event's ID (required)
+                        name: "Evans April Meeting", // Event name (required)
+                        date: "April/05/2023", // Event date (required)
+                        description:"We will go over the conference agenda and conference expectations, as well as cover any last minute questions!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event23', // Event's ID (required)
+                        name: "NCHS Meeting", // Event name (required)
+                        date: "January/18/2023", // Event date (required)
+                        description:"We will introduce the Retro-Cade conference today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event24', // Event's ID (required)
+                        name: "NCHS Meeting", // Event name (required)
+                        date: "February/15/2023", // Event date (required)
+                        description:"We will be working with VEX Robots today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event25', // Event's ID (required)
+                        name: "NCHS Meeting", // Event name (required)
+                        date: "March/13/2023", // Event date (required)
+                        description:"We will be working on an arduino workshop today!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event26', // Event's ID (required)
+                        name: "Evans Final Meeting", // Event name (required)
+                        date: "April/19/2023", // Event date (required)
+                        description:"We will celebrate having a successful year in Bit-by-Bit!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event27', // Event's ID (required)
+                        name: "Kingsley Final Meeting", // Event name (required)
+                        date: "April/20/2023", // Event date (required)
+                        description:"We will celebrate having a successful year in Bit-by-Bit!",
+                        type: "meeting", // Event type (required)
+                    },
+                    {
+                        id: 'event28', // Event's ID (required)
+                        name: "Chiddix Final Meeting", // Event name (required)
+                        date: "April/21/2023", // Event date (required)
+                        description:"We will celebrate having a successful year in Bit-by-Bit!",
+                        type: "meeting", // Event type (required)
+                    }
+    ]
+            })
+        })
+    </script>
+    <!------------------ footer -------------------> 
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="https://www.facebook.com/technologybitbybit"><i class="fa fa-facebook"></i></a>
+<a href="https://instagram.com/bitbybit.tech?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/company/bit-by-bit-tech/"><i class="fa fa-linkedin"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="about.html">About</a></li>
+<li><a href="calendar.html">Calendar</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="sponsor.html">Sponsor</a></li>
+<li><a href="forum.html">Forum</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="row">
+  <li><a href="copyright.html"> Bit-by-Bit Copyright © 2023 || All rights reserved.   •
+  </a></li>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>

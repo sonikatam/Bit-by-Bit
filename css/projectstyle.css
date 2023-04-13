@@ -1,0 +1,246 @@
+/* homepage*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Change the font family here */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: -10px;
+ }
+ 
+ /*Header*/
+ header {
+    background-color: rgba(0, 0, 0, 1);
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+ }
+ 
+ header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+ }
+
+ /*Header logo in top left*/
+ .logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-left: 20px;
+ }
+
+ /*navigation menu*/
+ nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+ }
+ 
+ nav ul li {
+    margin: 0 15px;
+ }
+ 
+ nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif; /* Change the font family here for the navigation links */
+ }
+ 
+/*hover over navigation menu - underline and change color to green*/
+   nav ul li a:hover {
+    text-decoration: underline;
+    color: #C1FF72;
+ }
+ /*elements of navigation menu*/
+ h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif; /* Change the font family here for headings */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+ }
+
+/* body */
+
+.lesson-plans {
+    background-color: rgb(188, 188, 188);
+    padding: 50px 0;
+}
+  
+  .section-title {
+    text-align: center;
+    color: black;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .lesson-plan-widget {
+    background-color: #C1FF72;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .lesson-plan-widget:hover {
+    box-shadow: 0px 0px 10px #333333;
+    transform: translateY(-10px);
+  }
+  
+  .lesson-plan-widget img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .lesson-plan-title {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+.col-md-4
+{
+    margin: 50px; 
+}
+  
+  @media only screen and (max-width: 767px) {
+    .lesson-plan-widget {
+      margin-bottom: 30px;
+    }
+  }
+  
+
+
+ /*footer*/
+ body{
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+    background:#C1FF72;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:black;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:black;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color: forestgreen;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+ 
+  
+ /* Media queries for smaller screen sizes */
+@media (max-width: 768px) {
+    header {
+       flex-wrap: wrap;
+    }
+ 
+    .logo {
+       margin-left: 0;
+       margin-bottom: 10px;
+       text-align: center;
+       width: 100%;
+    }
+ 
+    .logo img {
+       width: 70%;
+       height: auto;
+    }
+ 
+    nav ul {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+    }
+ 
+    nav ul li {
+       margin: 0;
+       text-align: center;
+       width: 100%;
+       margin-bottom: 10px;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 767px) {
+   /* Adjust header styles for smaller screens */
+   .container {
+     flex-wrap: wrap;
+   }
+ 
+   .logo {
+     margin-right: 0;
+     margin-bottom: 10px;
+   }
+ 
+   nav {
+     width: 100%;
+   }
+ 
+   ul {
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     padding: 0;
+   }
+ 
+   li {
+     margin-bottom: 10px;
+   }
+ 
+   li:last-child {
+     margin-bottom: 0;
+   }
+}
